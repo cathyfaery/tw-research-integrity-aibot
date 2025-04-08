@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <title>研究誠信 AI 助理</title>
+</head>
+<body>
+  <h2>🤖 研究誠信 AI 小助理</h2>
+  <textarea id="chatInput" rows="5" placeholder="請輸入學術情境問題..."></textarea><br>
+  <button onclick="sendMessage()">送出訊息</button>
+  <pre id="chatLog"></pre>
+<script>
+async function sendMessage() {
+  const input = document.getElementById("chatInput").value;
+  const chatLog = document.getElementById("chatLog");
+  chatLog.innerText += `\n👤 你：${input}`;
+  const response = await fetch("https://api.openai.com/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Authorization": "Bearer YOUR_OPENAI_API_KEY"
+    },
+    body: JSON.stringify({
+      model: "gpt-4",
+      messages: [
+        { role: "system", content: "你是一位以臺灣研究誠信守則為核心進行互動教育的AI小助理，採引導式問答設計。" },
+        { role: "user", content: input }
+      ]
+    })
+  });
+  const data = await response.json();
+  chatLog.innerText += `\n🤖 助理：${data.choices[0].message.content}`;
+}
+</script>
+</body>
+</html>
