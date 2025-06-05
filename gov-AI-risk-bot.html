@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>公部門 AI 倫理風險引導員 BOT 介紹</title>
+  <style>
+    :root {
+      --primary: #2962ff;
+      --secondary: #f3f7fa;
+      --card-radius: 16px;
+      --card-shadow: 0 2px 12px rgba(0,0,0,0.07);
+      --card-gap: 24px;
+      --max-width: 960px;
+    }
+    body {
+      font-family: 'Noto Sans TC', 'Microsoft JhengHei', Arial, sans-serif;
+      background: var(--secondary);
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    .container {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 32px 16px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.1rem;
+      color: var(--primary);
+      margin-bottom: 8px;
+      letter-spacing: 1px;
+    }
+    .subtitle {
+      text-align: center;
+      color: #444;
+      margin-bottom: 36px;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--card-gap);
+      justify-content: center;
+    }
+    .card {
+      background: #fff;
+      border-radius: var(--card-radius);
+      box-shadow: var(--card-shadow);
+      flex: 1 1 320px;
+      max-width: 360px;
+      min-width: 260px;
+      padding: 28px 22px 20px 22px;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.18s, box-shadow 0.18s;
+    }
+    .card:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 6px 24px rgba(41,98,255,0.13);
+    }
+    .card .icon {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+    .card-title {
+      font-size: 1.17rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #1740a5;
+      letter-spacing: 0.5px;
+    }
+    .card-content {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: #333;
+      margin-bottom: 2px;
+    }
+    @media (max-width: 900px) {
+      .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+      }
+      .card {
+        max-width: 95vw;
+      }
+    }
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px 3vw;
+      }
+      .card {
+        padding: 18px 9px 14px 12px;
+      }
+      h1 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>公部門 AI 倫理風險引導員 BOT</h1>
+    <div class="subtitle">特色總覽（Gov-AI-Risk-Bot Highlights）</div>
+    <div class="cards">
+
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="icon">🔍</div>
+        <div class="card-title">專為政府機關設計的 AI 合規導引</div>
+        <div class="card-content">
+          根據《行政院生成式 AI 參考指引》與《人工智慧基本法草案》設計，熟悉《行政程序法》、《資訊安全法》、《個資法》等公務常用法規背景。
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="icon">⚖️</div>
+        <div class="card-title">聚焦「依法行政」與「風險治理」</div>
+        <div class="card-content">
+          強調法源依據、正當程序、職權邊界。<br>
+          協助釐清 AI 在每項業務中是否具「正當性」、「必要性」與「合比例性」。
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="icon">🛡️</div>
+        <div class="card-title">搭載台灣AI相關法規知識庫</div>
+        <div class="card-content">
+          整合數位發展部、行政院的風險情境與分級指引。<br>
+          依據地方政府不同局處（如教育局、社會局、衛生局）提供客製化風險提醒。
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="icon">🧾</div>
+        <div class="card-title">可支援實務應用演練</div>
+        <div class="card-content">
+          可模擬 AI 草擬公文、回覆、政策說明，並指出其中風險與改善方式。<br>
+          協助設計「人為審核流程」、「使用紀錄機制」等具體作法。
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="icon">🤝</div>
+        <div class="card-title">尊重人為審查與問責機制</div>
+        <div class="card-content">
+          明確強調：AI 不得直接對外發布，不得作出實質決策。<br>
+          鼓勵機關建立「AI 草稿 → 人工審核 → 負責簽署」的應用鏈。
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
