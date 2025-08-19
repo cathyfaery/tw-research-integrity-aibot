@@ -1,105 +1,96 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>台灣-研究誠信 AI 小助理介紹</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>台灣-研究誠信 AI 小助理</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: "Segoe UI", "Noto Sans TC", "微軟正黑體", Arial, sans-serif;
+      background-color: #f7fafe;
       margin: 0;
-      padding: 2rem;
-      background-color: #f9f9f9;
-      color: #333;
+      padding: 0;
     }
-    h1, h2 {
-      color: #145DA0;
-    }
-    .card {
-      background: white;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
-      margin-bottom: 2rem;
-    }
-    .card h2 {
-      margin-top: 0;
-    }
-    .card ul {
-      padding-left: 1.2rem;
-    }
-    .flex {
+    .center-btn-container {
+      width: 100%;
       display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
+      justify-content: center;
+      align-items: center;
+      margin-top: 48px;
+      margin-bottom: 40px;
     }
-    .before-after {
-      flex: 1 1 45%;
-      background-color: #e8f0fe;
-      border-radius: 12px;
-      padding: 1rem;
+    .fancy-btn {
+      display: inline-block;
+      padding: 16px 36px;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #fff;
+      background: linear-gradient(90deg, #2E8BFF 0%, #38C1D6 100%);
+      border: none;
+      border-radius: 32px;
+      box-shadow: 0 4px 20px rgba(46,139,255,0.12), 0 1.5px 6px rgba(56,193,214,0.10);
+      text-decoration: none;
+      transition: background 0.3s, box-shadow 0.3s, transform 0.2s;
+      cursor: pointer;
+      letter-spacing: 1px;
     }
-    .before-after h3 {
+    .fancy-btn:hover, .fancy-btn:focus {
+      background: linear-gradient(90deg, #38C1D6 0%, #2E8BFF 100%);
+      box-shadow: 0 8px 32px rgba(46,139,255,0.16), 0 2px 10px rgba(56,193,214,0.12);
+      transform: scale(1.06);
+      outline: none;
+    }
+    .main-content {
+      width: 100%;
+      max-width: 680px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 2px 8px rgba(56,193,214,0.08);
+      padding: 32px;
+    }
+    h1 {
+      text-align: center;
+      color: #2E8BFF;
       margin-top: 0;
-      color: #2E7D32;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
-    @media (max-width: 768px) {
-      .before-after {
-        flex: 1 1 100%;
+    p {
+      color: #333;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+    @media (max-width: 700px) {
+      .main-content {
+        padding: 16px;
+        border-radius: 8px;
+      }
+      .center-btn-container {
+        margin-top: 32px;
+        margin-bottom: 24px;
+      }
+      h1 {
+        font-size: 1.3rem;
       }
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>什麼是「台灣-研究誠信 AI 小助理」？</h1>
-    <p>這是一款根據《臺灣研究誠信守則（2020）》設計的對話式 AI 工具，目的是協助高中生、老師及研究初學者認識學術誠信的五大原則：<strong>誠實、尊重、嚴謹、課責、透明</strong>。</p>
-    <ul>
-      <li>提供引導式問答，不給標準答案，而是陪你思考</li>
-      <li>幫助釐清研究問題、資料使用與寫作表達中的誠信原則</li>
-      <li>適用於小論文寫作、課堂報告、專題探究與課外研究</li>
-    </ul>
+  <div class="center-btn-container">
+    <a class="fancy-btn" href="https://chatgpt.com/g/g-67f54c625b508191bda9133eed56f098-tai-wan-yan-jiu-cheng-xin-ai-xiao-zhu-li" target="_blank">
+      台灣-研究誠信 AI 小助理
+    </a>
   </div>
-
-  <div class="card">
-    <h2>如何使用？</h2>
-    <ol>
-      <li>學生：描述你目前遇到的研究情境（如資料、AI使用、報告撰寫）</li>
-      <li>AI 小助理會用「What–Why–How」方式，陪你釐清問題與誠信考量</li>
-      <li>老師：可用來教學、對話引導、幫學生做誠信思辨練習</li>
-    </ol>
+  <div class="main-content">
+    <h1>研究誠信 AI 小助理</h1>
+    <p>
+      歡迎使用台灣-研究誠信 AI 小助理！<br>
+      本工具協助研究人員解答有關研究誠信、學術倫理、AI助理應用等相關問題。<br>
+      點擊上方按鈕即可前往 AI 小助理，隨時為您提供支援與資訊。
+    </p>
+    <!-- 你可以在這裡加入更多內容 -->
   </div>
-
-  <div class="card">
-    <h2>高中場域 Before & After 誠信情境對照</h2>
-    <div class="flex">
-      <div class="before-after">
-        <h3>情境 1：找資料就能直接用？</h3>
-        <p><strong>Before：</strong> 直接複製網路內容，未標示出處。</p>
-        <p><strong>After：</strong> 知道要改寫與引註，學會資料整理與轉化。</p>
-      </div>
-      <div class="before-after">
-        <h3>情境 2：小論文就是「拼湊」資料？</h3>
-        <p><strong>Before：</strong> 把找到的幾篇內容拼湊成一份報告。</p>
-        <p><strong>After：</strong> 有明確的問題意識與資料支撐邏輯。</p>
-      </div>
-      <div class="before-after">
-        <h3>情境 3：用 AI 幫忙寫，沒問題吧？</h3>
-        <p><strong>Before：</strong> 不說明使用 AI，直接交作業。</p>
-        <p><strong>After：</strong> 誠實揭露 AI 協助部分，並加以補充與改寫。</p>
-      </div>
-      <div class="before-after">
-        <h3>情境 4：用學長姐作品改一下就好？</h3>
-        <p><strong>Before：</strong> 借用舊作但未註明，當作自己的。</p>
-        <p><strong>After：</strong> 清楚說明參考來源與延伸方式。</p>
-      </div>
-      <div class="before-after">
-        <h3>情境 5：小論文只是交差用？</h3>
-        <p><strong>Before：</strong> 應付心態，只求完成格式。</p>
-        <p><strong>After：</strong> 理解誠信是學習能力的一部分，自我檢核研究過程。</p>
-      </div>
-    </div>
-  </div>
-
 </body>
 </html>
